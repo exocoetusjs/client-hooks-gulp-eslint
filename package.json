@@ -1,0 +1,29 @@
+{
+  "name": "client-hooks-eslint-es6",
+  "version": "0.0.1",
+  "description": "a",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crux-wild/client-hooks-eslint-es6.git"
+  },
+  "keywords": [
+    "client",
+    "hooks",
+    "eslint",
+    "airbnb",
+    "style",
+    "javascript",
+    "es6",
+    "gulp"
+  ],
+  "author": "crux",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crux-wild/client-hooks-eslint-es6/issues"
+  },
+  "homepage": "https://github.com/crux-wild/client-hooks-eslint-es6#readme"
+}
