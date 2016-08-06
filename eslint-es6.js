@@ -9,7 +9,7 @@ try {
     process.stderr.write('please install [gulp] first.\n');
   }
 
-  if (shell.exec('gulp eslint-es6 2> &1').code !== 0) {
+  if (shell.exec('gulp eslint-es6 2>&1').code !== 0) {
     process.stderr.write('gulp eslint-es6 >> execution failed.\n');
   }
 }
