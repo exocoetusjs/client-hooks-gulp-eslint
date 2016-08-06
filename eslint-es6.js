@@ -17,9 +17,9 @@ try {
     process.stderr.write('please install [gulp] first.\n');
   }
 
-  spawn('gulp',
-    ['--gulpfile', ` ${gulpPath}`, '2>&1'],
-      { stdio: [process.stdin, process.stdout, process.stdout] });
+  process.env.CWD = process.cwd();
+
+  shell.exec(`gulp --gulpfile ${gulpPath} 2>&1`);
 }
 catch (error) {
   process.stderr.write(`${error}\n`);
