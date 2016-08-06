@@ -4,6 +4,8 @@ const spawn = require('child_process').spawn;
 
 const shell = require('shelljs');
 
+const chalk = require('chalk');
+
 const path = require('path');
 
 const moduleDir = __dirname;
@@ -19,7 +21,7 @@ try {
 
   process.env.CWD = process.cwd();
 
-  shell.exec(`gulp --gulpfile ${gulpPath} 2>&1`);
+  shell.exec(`gulp --color --gulpfile ${gulpPath} 2>&1`);
 }
 catch (error) {
   process.stderr.write(`${error}\n`);
