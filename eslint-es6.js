@@ -1,5 +1,7 @@
 'use strict';
 
+const spawn = require('child_process').spawn;
+
 const shell = require('shelljs');
 
 const path = require('path');
@@ -15,9 +17,9 @@ try {
     process.stderr.write('please install [gulp] first.\n');
   }
 
-  if (shell.exec(`gulp eslint-es6 --gulpfile ${gulpPath} 2>&1`).code !== 0) {
-    process.stderr.write('gulp eslint-es6 >> execution failed.\n');
-  }
+  spawn('gulp',
+    ['--gulpfile', ` ${gulpPath}`, '2>&1'],
+      { stdio: [process.stdin, process.stdout, process.stdout] });
 }
 catch (error) {
   process.stderr.write(`${error}\n`);
