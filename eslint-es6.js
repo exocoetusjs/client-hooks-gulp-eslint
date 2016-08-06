@@ -10,6 +10,8 @@ const path = require('path');
 
 const moduleDir = __dirname;
 
+const cwd = process.cwd();
+
 const gulpPath = path.join(moduleDir, 'gulpfile.js');
 
 shell.config.fatal = true;
@@ -19,9 +21,13 @@ try {
     process.stderr.write('please install [gulp] first.\n');
   }
 
-  process.env.CWD = process.cwd();
+  if (shell.exec(`export CWD=${cwd}`).code !== 0) {
+    process.stderr.write('export CWD => execution failed. \n');
+  }
 
-  shell.exec(`gulp --color --gulpfile ${gulpPath} 2>&1`);
+  if (shell.exec(`gulp --color --gulpfile ${gulpPath} 2>&1`).code !== 0) {
+    process.stderr.write('gulp eslint-es6 => execution failed. \n');
+  }
 }
 catch (error) {
   process.stderr.write(`${error}\n`);
