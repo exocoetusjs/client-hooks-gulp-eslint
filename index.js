@@ -4,7 +4,7 @@ const path = require('path');
 
 class EslintES6Plugin {
   constructor({ cwd = '' } = {}) {
-    this[Symbol.for('pluginName')] = 'mvn-compile';
+    this[Symbol.for('pluginName')] = 'eslint-es6';
     this[Symbol.for('initProcess')]();
   }
 
