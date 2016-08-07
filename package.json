@@ -1,6 +1,6 @@
 {
   "name": "client-hooks-eslint-es6",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A client-hooks plugin which lint javascript code style use airbnb es6 specification.",
   "main": "index.js",
   "scripts": {

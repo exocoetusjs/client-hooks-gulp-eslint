@@ -4,23 +4,18 @@ const path = require('path');
 
 class EslintES6Plugin {
   constructor({ cwd = '' } = {}) {
-    this[Symbol.for('pluginName')] = 'eslint-es6';
     this[Symbol.for('initProcess')]();
   }
 
   [Symbol.for('initProcess')]() {
     const moduleDir = __dirname;
-    const scriptLocation = path.join(moduleDir, 'eslint-es6.js');
+    const scriptPath = path.join(moduleDir, 'eslint-es6.js');
 
-    this[Symbol.for('process')] = spawn('node', [scriptLocation]);
+    this[Symbol.for('process')] = spawn('node', [scriptPath]);
   }
 
   getProcess() {
     return this[Symbol.for('process')];
-  }
-
-  getPluginName() {
-    return this[Symbol.for('pluginName')];
   }
 };
 
