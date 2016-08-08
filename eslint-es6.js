@@ -12,20 +12,14 @@ const moduleDir = __dirname;
 
 const gulpPath = path.join(moduleDir, 'gulpfile.js');
 
-const cwd = process.cwd();
+process.env.FORCE_COLOR = 'true';
+
+process.env.CWD = process.cwd();
 
 if (!shell.which('gulp')) {
-	process.stderr.write('please install [gulp] first.\n');
-}
-
-if (shell.exec(`export FORCE_COLOR='true'`).code !== 0) {
-	process.stderr.write('export FORCE_COLOR => execution failed. \n');
-}
-
-if (shell.exec(`export CWD=${cwd}`).code !== 0) {
-	process.stderr.write('export CWD => execution failed. \n');
+  process.stderr.write('please install [gulp] first.\n');
 }
 
 if (shell.exec(`gulp --gulpfile ${gulpPath} 2>&1`).code !== 0) {
-	process.stderr.write('gulp eslint-es6 => execution failed. \n');
+  process.stderr.write('gulp eslint-es6 => execution failed. \n');
 }
