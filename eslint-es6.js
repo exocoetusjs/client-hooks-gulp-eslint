@@ -8,9 +8,7 @@ const chalk = require('chalk');
 
 const path = require('path');
 
-const moduleDir = __dirname;
-
-const gulpPath = path.join(moduleDir, 'gulpfile.js');
+const gulpPath = path.join(__dirname, 'gulpfile.js');
 
 process.env.FORCE_COLOR = 'true';
 
