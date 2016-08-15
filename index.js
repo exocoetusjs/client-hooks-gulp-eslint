@@ -1,4 +1,4 @@
-const spawn = require('child_process').fork;
+const fork = require('child_process').fork;
 
 const path = require('path');
 
