@@ -1,14 +1,12 @@
 'use strict';
 
-const spawn = require('child_process').spawn;
+const gulpPath = path.join(__dirname, 'gulpfile.js');
 
 const shell = require('shelljs');
 
 const chalk = require('chalk');
 
 const path = require('path');
-
-const gulpPath = path.join(__dirname, 'gulpfile.js');
 
 process.env.FORCE_COLOR = 'true';
 

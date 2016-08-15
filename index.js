@@ -1,4 +1,4 @@
-const spawn = require('child_process').spawn;
+const spawn = require('child_process').fork;
 
 const path = require('path');
 
@@ -8,10 +8,9 @@ class EslintES6Plugin {
   }
 
   [Symbol.for('initProcess')]() {
-    const moduleDir = __dirname;
-    const scriptPath = path.join(moduleDir, 'eslint-es6.js');
+    const modulePath = path.join(__dirname, 'eslint-es6.js');
 
-    this[Symbol.for('process')] = spawn('node', [scriptPath]);
+    this[Symbol.for('process')] = fork(modulePath);
   }
 
   getProcess() {
