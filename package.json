@@ -4,7 +4,8 @@
   "description": "A client-hooks plugin which lint javascript code style use airbnb es6 specification.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "install": "node scripts/install.js",
+    "postuninstall": "node scripts/postuninstall.js"
   },
   "repository": {
     "type": "git",

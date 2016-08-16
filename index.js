@@ -8,7 +8,7 @@ class EslintES6Plugin {
   }
 
   [Symbol.for('initProcess')]() {
-    const modulePath = path.join(__dirname, 'eslint-es6.js');
+    const modulePath = path.join(__dirname, 'lib', 'eslint-es6.js');
 
     this[Symbol.for('process')] = fork(modulePath, [], { silent: true });
   }
