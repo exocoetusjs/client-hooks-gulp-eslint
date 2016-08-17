@@ -1,4 +1,6 @@
-# client-hooks-gulp-eslint [![npm version][npm-version]][npm-url## Brief introduction
+# client-hooks-gulp-eslint [![npm version][npm-version]][npm-url]
+
+## Brief introduction
 
 ## Features
 
