@@ -1,7 +1,7 @@
 {
   "name": "client-hooks-gulp-eslint",
   "version": "0.2.2",
-  "description": "A client-hooks plugin which lint javascript code style use airbnb es6 specification.",
+  "description": "A client-hooks plugin which lint javascript code style use `gulp-eslint`.",
   "main": "index.js",
   "scripts": {
     "install": "node scripts/install.js",
