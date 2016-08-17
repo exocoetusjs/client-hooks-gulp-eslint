@@ -1,1 +1,1 @@
-# client-hooks-eslint-es6
+# client-hooks-gulp-eslint
