@@ -4,7 +4,7 @@ const gulp = require('gulp');
 
 const eslint = require('gulp-eslint');
 
-gulp.task('eslint-es6', () => {
+gulp.task('eslint', () => {
   // ESLint ignores files with "node_modules" paths.
   // So, it's best to have gulp ignore the directory as well.
   // Also, Be sure to return the stream from the task;
@@ -21,6 +21,6 @@ gulp.task('eslint-es6', () => {
     .pipe(eslint.failAfterError());
 });
 
-gulp.task('default', ['eslint-es6'], function () {
+gulp.task('default', ['eslint'], function () {
     // This will only run if the lint task is successful...
 });
