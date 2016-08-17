@@ -4,7 +4,7 @@
 
 ## Features
 
-**Fully configured:** you can custome plugin behavior completely.
+**Fully configured:** you can custome plugin behavior completely through configuration.
 
 ## Getting Started
 
