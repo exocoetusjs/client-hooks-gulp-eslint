@@ -6,6 +6,6 @@ const shell = require('shelljs');
 
 shell.cd('../../');
 
-utils.remove('mvn-compile.js');
+utils.remove('gulp-eslint.js');
 
 utils.newline();

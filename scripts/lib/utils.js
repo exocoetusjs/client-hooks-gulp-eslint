@@ -22,27 +22,27 @@ function newline() {
 
 function copy(filename = '') {
   const result = co(function*() {
-    if (filename === 'mvn-compile.js') {
-      return copy_mvn_compile_config();
+    if (filename === 'gulp-eslint.js') {
+      return copy_gulp_eslint_config();
     }
   });
   return result;
 }
 
 function check(filename = '') {
-  if (filename === 'mvn-compile.js') {
-    check_mvn_compile_config_dir();
+  if (filename === 'gulp-eslint.js') {
+    check_gulp_eslint_config_dir();
   }
 }
 
 function remove(filename = '') {
-  if (filename === 'mvn-compile.js') {
-    remove_mvn_compile_config();
+  if (filename === 'gulp-eslint.js') {
+    remove_gulp_eslint_config();
   }
 }
 
 function get_plugin() {
-  return "mvn-compile.js";
+  return "gulp-eslint.js";
 }
 
 function get_config_dir() {
@@ -55,7 +55,7 @@ function get_config_dir() {
   return config_dir;
 }
 
-function get_mvn_compile_config_dir() {
+function get_gulp_eslint_config_dir() {
   const config_dir = get_config_dir();
 
   const plugin = get_plugin();
@@ -65,7 +65,7 @@ function get_mvn_compile_config_dir() {
   return filePath;
 }
 
-function check_mvn_compile_config_dir() {
+function check_gulp_eslint_config_dir() {
   const config_dir = get_config_dir();
 
   const dir = chalk.bgBlack(config_dir);
@@ -124,9 +124,9 @@ function deal_exist_file(filePath= '') {
   return result;
 }
 
-function copy_mvn_compile_config() {
+function copy_gulp_eslint_config() {
   const result = co(function *() {
-    const filePath = get_mvn_compile_config_dir();
+    const filePath = get_gulp_eslint_config_dir();
 
     const filename = path.basename(filePath);
 
@@ -145,8 +145,8 @@ function copy_mvn_compile_config() {
   return result;
 }
 
-function remove_mvn_compile_config() {
-  const filePath = get_mvn_compile_config_dir();
+function remove_gulp_eslint_config() {
+  const filePath = get_gulp_eslint_config_dir();
 
   logger_operate('remove', `${filePath}`);
 

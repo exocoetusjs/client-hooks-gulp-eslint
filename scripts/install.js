@@ -12,10 +12,10 @@ co(function *() {
   shell.cd('../../');
 
   // check logic
-  utils.check('mvn-compile.js');
+  utils.check('gulp-eslint.js');
 
   // copy logic
-  yield utils.copy('mvn-compile.js');
+  yield utils.copy('gulp-eslint.js');
 
   // newline logic
   utils.newline();
