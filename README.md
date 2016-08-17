@@ -4,6 +4,8 @@
 
 ## Features
 
+**Fully configured:** you can custome plugin behavior completely.
+
 ## Getting Started
 
 ### Prerequisites
