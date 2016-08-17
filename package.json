@@ -1,6 +1,6 @@
 {
-  "name": "client-hooks-eslint-es6",
-  "version": "0.2.2",
+  "name": "client-hooks-gulp-eslint",
+  "version": "0.2.4",
   "description": "A client-hooks plugin which lint javascript code style use airbnb es6 specification.",
   "main": "index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "style",
     "javascript",
     "es6",
+    "es5",
     "gulp"
   ],
   "author": "crux",
