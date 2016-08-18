@@ -1,6 +1,6 @@
 {
   "name": "client-hooks-gulp-eslint",
-  "version": "0.2.2",
+  "version": "0.2.9",
   "description": "A client-hooks plugin which lint javascript code style use `gulp-eslint`.",
   "main": "index.js",
   "scripts": {
