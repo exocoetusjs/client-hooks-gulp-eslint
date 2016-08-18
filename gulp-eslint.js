@@ -13,6 +13,18 @@ const path = require('path');
 
 module.exports = {
   /**
+   * @type {String}
+   *
+   * use airbnb javascript specification lint code style.
+   *
+   * if value equals `es6`, use [airbnb es6 specification].
+   * if value equals `es5`, use [airbnb es5 specification].
+   *
+   * [airbnb es6 specification]: see https://github.com/airbnb/javascript
+   * [airbnb es5 specification]: see https://github.com/airbnb/javascript/tree/es5-deprecated/es5
+   */
+  airbnb: 'es6',
+  /**
    * @see https://github.com/gulpjs/gulp
    */
   gulp: {
@@ -183,7 +195,7 @@ module.exports = {
        * [config option]: http://eslint.org/docs/user-guide/command-line-interface#c-config
        * [Using Configuration Files]: http://eslint.org/docs/user-guide/configuring#using-configuration-files
        */
-      configFile: path.join(process.cwd(), 'node_modules', 'client-hooks-gulp-eslint', '.eslintrc'),
+      configFile: path.join(process.cwd(), '.eslintrc'),
       /**
        * @type {Boolean}
        *
