@@ -9,6 +9,8 @@
 *      [github repo](https://github.com/crux-wild/client-hooks-gulp-eslint)    *
 *                                                                              *
 *******************************************************************************/
+const path = require('path');
+
 module.exports = {
   /**
    * @see https://github.com/gulpjs/gulp
@@ -181,7 +183,7 @@ module.exports = {
        * [config option]: http://eslint.org/docs/user-guide/command-line-interface#c-config
        * [Using Configuration Files]: http://eslint.org/docs/user-guide/configuring#using-configuration-files
        */
-      configFile: '',
+      configFile: path.join(process.cwd(), 'node_modules', 'client-hooks-gulp-eslint', '.eslintrc'),
       /**
        * @type {Boolean}
        *
