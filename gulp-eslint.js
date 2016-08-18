@@ -129,7 +129,7 @@ module.exports = {
        *
        * [globals]: http://eslint.org/docs/user-guide/configuring#specifying-globals
        */
-      globals: {},
+      globals: [],
       /**
        * @type {Boolean}
        *
