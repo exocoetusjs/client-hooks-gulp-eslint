@@ -2,6 +2,8 @@
 
 ## Brief introduction
 
+<a href="https://asciinema.org/a/83466" target="_blank"><img src="https://asciinema.org/a/83466.png" width="589"/></a>
+
 ## Features
 
 **Fully configured:** you can custome plugin behavior completely through configuration.
